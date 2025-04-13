@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather App</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to right, #00c6ff, #0072ff);
+      color: white;
+      text-align: center;
+      padding: 40px;
+    }
+    .login-box {
+      background-color: rgba(0, 0, 0, 0.4);
+      padding: 20px;
+      border-radius: 10px;
+      display: inline-block;
+    }
+  </style>
+</head>
+<body>
+<div class="login-box">
+  <h1>Welcome to the Weather App</h1>
+  <p>Please login to access the weather information.</p>
+  <!-- Google login link -->
+  <a href="/oauth2/authorization/google" style="color: yellow; padding: 10px; background-color: #4285f4; border-radius: 5px; text-decoration: none;">Login with Google</a>
+</div>
+</body>
+</html>
