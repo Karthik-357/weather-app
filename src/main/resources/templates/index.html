@@ -3,29 +3,72 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Weather App</title>
+  <title>Welcome | Weather App</title>
   <style>
     body {
       font-family: 'Segoe UI', sans-serif;
-      background: linear-gradient(to right, #00c6ff, #0072ff);
-      color: white;
-      text-align: center;
-      padding: 40px;
+      background: linear-gradient(to right, #e0f7fa, #ffffff);
+      color: #333;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
     }
-    .login-box {
-      background-color: rgba(0, 0, 0, 0.4);
-      padding: 20px;
-      border-radius: 10px;
+
+    .container {
+      background-color: #ffffff;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+      padding: 40px 60px;
+      border-radius: 15px;
+      text-align: center;
+      max-width: 400px;
+    }
+
+    h1 {
+      font-size: 2.2em;
+      margin-bottom: 10px;
+      color: #0072ff;
+    }
+
+    p {
+      font-size: 1em;
+      color: #555;
+      margin-bottom: 30px;
+    }
+
+    .google-login {
+      background-color: #4285f4;
+      color: white;
+      text-decoration: none;
+      padding: 12px 24px;
+      font-size: 1em;
+      border-radius: 5px;
       display: inline-block;
+      transition: background-color 0.3s ease;
+    }
+
+    .google-login:hover {
+      background-color: #3367d6;
+    }
+
+    footer {
+      margin-top: 30px;
+      font-size: 0.8em;
+      color: #888;
     }
   </style>
 </head>
 <body>
-<div class="login-box">
-  <h1>Welcome to the Weather App</h1>
-  <p>Please login to access the weather information.</p>
-  <!-- Google login link -->
-  <a href="/oauth2/authorization/google" style="color: yellow; padding: 10px; background-color: #4285f4; border-radius: 5px; text-decoration: none;">Login with Google</a>
+
+<div class="container">
+  <h1>🌤️ Weather App</h1>
+  <p>Login to check the live weather in your city</p>
+  <a href="/oauth2/authorization/google" class="google-login">Login with Google</a>
+  <footer>
+    <p>Powered by Spring Boot & Tomorrow.io</p>
+  </footer>
 </div>
+
 </body>
 </html>
